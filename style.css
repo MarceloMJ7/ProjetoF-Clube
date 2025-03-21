@@ -14,6 +14,7 @@ header {
     text-align: center;
     flex-direction: row-reverse;
     justify-content: space-between;
+    border-bottom: 2px solid #df9916;
 }
 
 header img {
@@ -23,15 +24,16 @@ header img {
     align-items: center;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row-reverse;
 }
-.menu a{
+
+.menu a {
     margin-left: 15px;
     margin-right: 50px;
     flex-direction: row;
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
     text-align: center;
 
@@ -46,29 +48,79 @@ nav {
     background-color: black;
 }
 
-nav img {
+nav .paginaIndex {
     width: 50%;
-    height: 100%;   
+    height: 100%;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     flex-direction: column;
-    color: #DBD4AB; 
+    color: #fff;
 }
 
-.conteudo h1{
+.conteudo h1 {
     text-align: center;
 }
 
-.conteudo p{
+.conteudo p {
     text-align: justify;
     margin: 20px;
 }
 
-section{
+section {
+    display: flex;
     width: 100%;
     height: 250px;
-    background-color: red;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
 }
 
+section button {
+    width: 400px;
+    height: 60px;
+    background-color: #df9916;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #888686;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f5a40e;
+    height: 40px;
+    align-items: center;
+}
+
+/*PáginaSobre*/
+
+.paginaSobre {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    height: 100%;
+    justify-content: center;
+}
+
+nav .container {
+    background-color: #888686;
+    height: 100%;
+    width: 50%;
+    color: #fff;
+}
+
+nav .imagem img {
+    height: 500px;
+}
+
+nav h1{
+    text-align: center;
+}
