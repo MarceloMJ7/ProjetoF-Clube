@@ -2,86 +2,83 @@
 
 body {
     margin: 0 auto;
+    background-color: black;
     font-family: "Century Gothic", sans-serif;
 }
 
 header {
     display: flex;
-    height: 70px;
-    width: 100%;
-    line-height: 70px;
-    background-color: black;
+    max-width: auto;
+    max-height: auto;
     text-align: center;
-    flex-direction: row-reverse;
+    align-items: center;
+    background-color: black;
     justify-content: space-between;
     border-bottom: 2px solid #df9916;
 }
 
 header img {
     margin-left: 50px;
-    height: 70px;
-    width: 150px;
+    height: 50px;
+    width: auto;
     align-items: center;
 }
 
 .menu {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .menu a {
-    margin-left: 15px;
+    font-size: 12px;
     margin-right: 50px;
-    flex-direction: row;
     color: #fff;
     text-decoration: none;
     text-align: center;
 
 }
 
-nav {
+header a:hover {
+    background-color: #888686;
+}
+
+.paginaIndex {
     display: flex;
-    flex-direction: row;
+    max-width: auto;
+    margin: 15px 15px;
     justify-content: space-between;
-    margin: 0 auto;
-    height: 600px;
-    background-color: black;
+    height: auto;
 }
 
-nav .paginaIndex {
-    width: 50%;
-    height: 100%;
+.paginaIndex img {
+    width: 600px;
+    height: auto;
 }
 
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-}
-
-.conteudo h1 {
+section h1 {
     text-align: center;
 }
 
-.conteudo p {
-    text-align: justify;
-    margin: 20px;
+.conteudo {
+    max-width: 50%;
+    height: auto;
+    align-items: center;
+    color: white;
 }
 
-section {
+nav {
     display: flex;
-    width: 100%;
-    height: 250px;
+    max-width: 100%;
+    height: 125px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: black;
 
 }
 
-section button {
-    width: 400px;
-    height: 60px;
+nav button {
+    width: 300px;
+    height: 40px;
     background-color: #df9916;
     border-radius: 25px;
     font-size: 20px;
@@ -96,7 +93,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #f5a40e;
-    height: 40px;
+    height: 30px;
     align-items: center;
 }
 
@@ -105,22 +102,91 @@ footer {
 .paginaSobre {
     display: flex;
     flex-direction: column;
-    margin: 5px 5px;
-    height: 100%;
+    background-color: black;
+    padding-top: 15px;
     justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    color: white;
+
 }
 
-nav .container {
-    background-color: #888686;
-    height: 100%;
-    width: 50%;
-    color: #fff;
+.paginaSobre img {
+    height: 300px;
+    width: auto;
 }
 
-nav .imagem img {
-    height: 500px;
+.paginaSobre h1 {
+    font-size: 15px;
 }
 
-nav h1{
+.conteudoSobre {
+    margin: 0 10px;
+    font-size: 12px;
+    text-align: justify;
+    color: white;
+}
+
+
+
+.tabelaTitulos {
+    margin-bottom: 10px;
     text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+.titulos {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    border: transparent;
+}
+
+tr,
+td,
+th {
+    border: 1px solid #f5a40e;
+    padding: 5px;
+}
+
+/* Página Cadastro*/
+
+.paginaCadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+    max-width: 100%;
+    height: 540px;
+}
+
+.cadastro {
+    width: 300px;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    border-color: #f5a40e;
+    border-radius: 15px;
+}
+
+.paginaCadastro input {
+    margin: 10px auto;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.paginaCadastro button {
+    width: 30%;
+    margin: 0 10%;
+    background-color: #f5a40e;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
 }
