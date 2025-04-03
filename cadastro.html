@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Fã Clube</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,25 +26,41 @@
         </div>
 
         <div class="formulario">
-            <form name="frmfaleconosco" method="get" action="#">
+            <form name="frmfaleconosco" method="get" action="#" onsubmit="return validaFaleConosco()">
                 <fieldset class="cadastro">
                     <legend>Dados Pessoais:</legend>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="txtnome" id="nome" placeholder="Digite seu nome">
-                    <label for="fone">Telefone:</label>
-                    <input type="text" name="txtfone" id="fone" placeholder="Digite seu Telefone">
-                    <label for="email">E-Mail:</label>
-                    <input type="email" name="txtemail" id="email" placeholder="Digite seu E-Mail">
-                    <label for="cpf">CPF:</label>
-                    <input type="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
-    
-                    <button> Enviar</button><button>Limpar</button>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="txtnome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <label for="">Sexo:</label>
+                    <div class="radio">
+
+                        Masculino <input type="radio" name="sexo" value="M">
+
+                        Feminino <input type="radio" name="sexo" value="F">
+
+                    </div>
+                    <div>
+                        <label for="fone">Telefone:</label>
+                        <input type="number" name="txtfone" id="fone" placeholder="Digite seu Telefone">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" name="txtemail" id="email" placeholder="Digite seu E-Mail">
+                    </div>
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    </div>
+                    <button type="submit"> Enviar</button><button type="reset"
+                        onclick="verificaMotivo(null)">Limpar</button>
                 </fieldset>
-    
-    
+
+
             </form>
         </div>
-       
+
     </section>
     <footer>copyright &copy;</footer>
 </body>
