@@ -1,5 +1,5 @@
 
-    
+
 function validaFaleConosco() {
     var nome = document.frmfaleconosco.txtnome.value;
     var expRegNome = new RegExp("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
@@ -14,12 +14,15 @@ function validaFaleConosco() {
         alert("Preencha o campo Telefone Corretamente.");
         document.frmfaleconosco.txtfone.focus();
         return false;
-    } else if (document.frmfaleconosco.txtemail.value == "") {
-        alert("Preencha seu email");
+    }
+    var email = document.frmfaleconosco.txtemail.value;
+    var expRegMail = new RegExp("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$");
+    if (!expRegMail.test(email)) {
+        alert("Preencha o campo Email Corretamente.");
         document.frmfaleconosco.txtemail.focus();
         return false;
     }
-    var cpf = document.frmfaleconosco.cpf.value.trim();
+    var cpf = document.frmfaleconosco.cpf.value;
     var expCpf = new RegExp("^[0-9]{11}$");
     if (cpf == "") {
         alert("Preencha o campo CPF.");
@@ -48,10 +51,10 @@ function validaFaleConosco() {
             return false;
         }
 
-       if(!document.frmfaleconosco.checkbox1.checked){
+        if (!document.frmfaleconosco.checkbox1.checked) {
             alert("Você precisa marcar a opção para participar do clube");
             return false;
-       }
+        }
 
     }
     return true;
