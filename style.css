@@ -38,7 +38,7 @@ header img {
 
 }
 
-header a:hover {
+.menu a:hover {
     background-color: #888686;
 }
 
