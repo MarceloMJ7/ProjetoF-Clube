@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Fã Clube</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,7 +30,7 @@
                     <legend>Dados Pessoais:</legend>
                     <div>
                         <label for="nome">Nome:</label>
-                        <input type="text" name="txtnome" id="nome" placeholder="Digite seu nome">
+                        <input type="text" name="txtnome" id="nome" placeholder="Digite seu Nome e Sobrenome">
                     </div>
                     <label for="">Sexo:</label>
                     <div class="radio">
@@ -43,7 +42,7 @@
                     </div>
                     <div>
                         <label for="fone">Telefone:</label>
-                        <input type="number" name="txtfone" id="fone" placeholder="Digite seu Telefone">
+                        <input type="number" name="txtfone" id="fone" placeholder="xxxxxxx-xxxx">
                     </div>
                     <div>
                         <label for="email">E-Mail:</label>
@@ -51,7 +50,14 @@
                     </div>
                     <div>
                         <label for="cpf">CPF:</label>
-                        <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    </div>
+                    <div class="check">
+                        <label>
+                            <input type="checkbox" name="checkbox1" value="checkbox1">
+                             Selecione para participar do Fã Clube
+                        </label>
+
                     </div>
                     <button type="submit"> Enviar</button><button type="reset"
                         onclick="verificaMotivo(null)">Limpar</button>
@@ -63,6 +69,7 @@
 
     </section>
     <footer>copyright &copy;</footer>
+    <script src="script.js"></script>
 </body>
 
 

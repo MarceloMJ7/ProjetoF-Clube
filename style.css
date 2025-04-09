@@ -198,3 +198,17 @@ th {
     align-items: center;
 }
 
+.check{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 10px;
+    
+}
+
+.check input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+}
