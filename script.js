@@ -62,3 +62,8 @@ function validaFaleConosco() {
 
 }
 
+$(document).ready(function () {
+    $("header").load("/general/cabecalho.html");
+    $("footer").load("/general/footer.html");
+});
+
